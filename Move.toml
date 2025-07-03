@@ -10,5 +10,5 @@ dev = "0x2824fccefbe3884a180c55c014edae2fa07a9b244e390ae57b1b262e9db6c54e"
 
 [dependencies.AptosFramework]
 git = "https://github.com/aptos-labs/aptos-framework.git"
-rev = "mainnet"
+rev = "devnet"
 subdir = "aptos-framework"
