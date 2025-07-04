@@ -34,7 +34,7 @@ A comprehensive utility library for Aptos Move development, providing essential 
 Add to your Move.toml:
 ```toml
 [dependencies]
-AptosMoveUtils = { git = "https://github.com/mrathod05/aptos-move-utils.git", rev = "main" }
+AptosMoveUtils = { git = "https://github.com/mrathod05/aptos-move-utils.git", rev = "mainnet" }
 ```
 ## 🚀 Quick Start
 ```move
