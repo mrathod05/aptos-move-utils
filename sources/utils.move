@@ -23,9 +23,11 @@ module dev::utils {
 
     /// Print key with value in formatted way
     public fun print_formatted<T: drop>(key: vector<u8>, value: T) {
-        print(&utf8(b"["));
-        print(&utf8(key));
-        print(&utf8(b"]: "));
+        let byte = b"[";
+        byte.append(key);
+
+        byte.append(b"]: ");
+        print(&utf8(byte));
         print(&value);
     }
 
@@ -43,9 +45,10 @@ module dev::utils {
 
     /// Print debug information
     public fun print_debug<T: drop>(msg: vector<u8>, value: T) {
-        print(&utf8(b"DEBUG: "));
-        print(&utf8(msg));
-        print(&utf8(b" = "));
+        let byte = b"DEBUG: ";
+        byte.append(msg);
+        byte.append(b" = ");
+        print(&utf8(byte));
         print(&value);
     }
 
